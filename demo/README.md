@@ -146,3 +146,10 @@ This project is licensed under the MIT License.
 [![System Demo](C:\Users\ADMIN\Pictures\cancel.png)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 Click vào ảnh để xem video demo.
+
+
+## Demo Video
+
+<video controls width="100%">
+    <source src="./video/demo.mp4" type="video/mp4">
+</video>
