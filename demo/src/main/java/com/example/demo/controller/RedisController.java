@@ -2,9 +2,10 @@ package com.example.demo.controller;
 
 import com.example.demo.dto.UserDto;
 import com.example.demo.service.RedisService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import tools.jackson.databind.ObjectMapper;
 
 @RestController
 @RequestMapping("/redis")
@@ -16,7 +17,7 @@ public class RedisController {
 
 
     @PostMapping
-    public String save() {
+    public String save() throws JsonProcessingException {
 
         UserDto user = new UserDto(
                 1L,
